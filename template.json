@@ -1,0 +1,25 @@
+[
+    {
+        "id": "[number]",
+        "media_id": "[lookup ID in image database]",
+        "title": {
+            "english": "[null or string]",
+            "japanese": "[null or string]",
+            "pretty": "[null or string]"
+        },
+        "upload_date": "[unix timestamp]",
+        "tags": [
+            "[string]",
+            "[string]",...
+        ],
+        "category": "[string]",
+        "language": "[string]",
+        "artist": "[string]",
+        "parody": "[string]",
+        "characters": [
+            "[null or string]",
+            "[null or string]",...
+        ],
+        "num_pages": "[number]"
+    },...
+]
