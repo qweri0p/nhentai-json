@@ -42,3 +42,5 @@ Main issue has been resolved. However a few new issues have come up.
 - The result is embedded in HTML. I need it in pure JSON
 - All cjk characters have been turned into unicode references
 Both can easily be done with split() and a function
+
+I'm currently retreiving all json files for later use. This will take some time...
