@@ -44,3 +44,10 @@ Main issue has been resolved. However a few new issues have come up.
 Both can easily be done with split() and a function
 
 I'm currently retreiving all json files for later use. This will take some time...
+
+Next day:
+This shit doesn't work at all. I got like 400 files deep and then it broke:(.
+I have two options:
+- Press on and do this mess, which will be very annoying and very hard to update.
+- Fork the nhentai-api npm package to make it work with FlareSolverr. This will make it dependent on a seperate program.
+- Give up. nhentai sucks!
