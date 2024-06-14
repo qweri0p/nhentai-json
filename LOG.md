@@ -51,3 +51,23 @@ I have two options:
 - Press on and do this mess, which will be very annoying and very hard to update.
 - Fork the nhentai-api npm package to make it work with FlareSolverr. This will make it dependent on a seperate program.
 - Give up. nhentai sucks!
+
+Commit 4711407
+
+ok for some reason nhentai disabled the cloudflare protection
+(fuck cloudflare)
+rewrote the script to work without flaresolverr
+now just let it gather data
+and then modify that data into one or more compact json files
+easy!
+
+i just started the scraping process
+i should do this with a vpn
+fuck it
+if i get ip blocked i'll just use a vpn
+
+the data from this scrape will not be complete
+when a new manga is uploaded, all others get moved up by one.
+if this happens between me starting the scrape and it finishing (lol)
+it will skip both the one that got added
+there will also be a duplicate across two files
