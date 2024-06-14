@@ -103,3 +103,13 @@ but it doesn't seem to matter?
 i'm now convinced this isn't an issue since nhentai IS rate limiting me
 however it is not enough to cause a timeout
 so it should be 100% ok
+
+## Commit 370fc03
+
+turns out, rate limiting DOES make the script skip
+fixed it
+
+i've realized that this way of scraping is very easy to maintain
+in the script you just move the index variable up and the 0 in the while condition up to the last recorded gallery
+might even be able to automate it in github actions
+i should've started with this approach to begin with
