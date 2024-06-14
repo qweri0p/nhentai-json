@@ -92,3 +92,5 @@ i'll do this later
 i should be quick, idk when they're gonna enable cloudflare again (or something similar)
 
 results of failed dumping are in the "failed" branch
+
+Update 2:
