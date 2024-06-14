@@ -71,3 +71,22 @@ when a new manga is uploaded, all others get moved up by one.
 if this happens between me starting the scrape and it finishing (lol)
 it will skip both the one that got added
 there will also be a duplicate across two files
+
+Update:
+I ran into 2 issues:
+1. Connection reset by peer
+2. If a manga has been deleted off nhentai, the api can't get the data from the page the manga was on.
+
+the first issue is easily fixed with a try catch block
+the second issue is a bit harder
+
+my current idea is to have it query all 6-digit codes
+and store all in json
+this would accidentally fix the issue described above (line 70)
+however, this would take WAY longer
+as for now I have 167 megabytes of json
+I NEED MORE!
+
+i'll do this later
+
+i should be quick, idk when they're gonna enable cloudflare again (or something similar)
