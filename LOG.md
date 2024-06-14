@@ -1,3 +1,4 @@
+# Log
 I'm looking for a search query that selects ALL items in nhentai. "pages:>0" works
 
 I think I want to decrease the size of the files. First make them conform to the following json template:
@@ -36,7 +37,7 @@ My first goal is to make a script that downloads all json objects into a directo
 
 I'll start with Python.
 
-Commit 3b57edb
+## Commit 3b57edb
 
 Main issue has been resolved. However a few new issues have come up.
 - The result is embedded in HTML. I need it in pure JSON
@@ -52,7 +53,7 @@ I have two options:
 - Fork the nhentai-api npm package to make it work with FlareSolverr. This will make it dependent on a seperate program.
 - Give up. nhentai sucks!
 
-Commit 4711407
+## Commit 4711407
 
 ok for some reason nhentai disabled the cloudflare protection
 (fuck cloudflare)
@@ -72,7 +73,7 @@ if this happens between me starting the scrape and it finishing (lol)
 it will skip both the one that got added
 there will also be a duplicate across two files
 
-Update:
+### Update
 I ran into 2 issues:
 1. Connection reset by peer
 2. If a manga has been deleted off nhentai, the api can't get the data from the page the manga was on.
@@ -93,4 +94,12 @@ i should be quick, idk when they're gonna enable cloudflare again (or something 
 
 results of failed dumping are in the "failed" branch
 
-Update 2:
+## Commit 4913c9d
+
+rewrote the script to fetch json for every 'gallery'
+seems to be working flawlessly
+i'm getting http code 429 (too many requests)
+but it doesn't seem to matter?
+i'm now convinced this isn't an issue since nhentai IS rate limiting me
+however it is not enough to cause a timeout
+so it should be 100% ok
