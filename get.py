@@ -1,4 +1,4 @@
-import requests, json, datetime
+import requests, json, datetime, time
 
 headers={"Content-Type": "application/json"}
 
@@ -12,7 +12,7 @@ dirname = "raw"
 # I can't be bothered to have the script make the directory
 # just `mkdir raw` lmao
 
-index = 514583
+index = 514586
 while index > 0:
     try:
         result = requests.get(fulllink + str(index), headers=headers)
@@ -21,6 +21,10 @@ while index > 0:
             print("Downloading: "+result.url)
             with open(dirname+"/"+str(index)+".json", 'w', encoding="utf-8") as f:
                 json.dump(rawResult, f, ensure_ascii=False)
+        elif result.status_code == 429:
+            print("Rate limited!\nTrying again.")
+            time.sleep(0.1)
+            index+=1
     except:
         index+=1
     index-=1
