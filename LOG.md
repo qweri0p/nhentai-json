@@ -114,9 +114,18 @@ in the script you just move the index variable up and the 0 in the while conditi
 might even be able to automate it in github actions  
 i should've started with this approach to begin with  
 
-## Commit 4984f08
+## Commit 0ddf395
 
 raw dump is done!
 either i do a json, or i do a sqlite database  
 hmmm  
 lemme think about this  
+
+## Commit 5cde280
+
+chatgippity wrote me a script to check missing numbers  
+all appears to be correct  
+the check.py script returns a list of id's  
+all of them appear to have been deleted  
+i'll turn it into a proper script later (argparse, path instead of os)
+
