@@ -137,3 +137,10 @@ the exported file from parser2.py is still massive
 next up, database for easier querying  
 mysql or sqlite??!?!?  
 i'm gonna start with sqlite cuz it's easier to export
+
+## Commit c70dbda
+
+ok so i can't use git lfs because i have a maximum on github  
+never knew  
+lmao  
+raw json objects on github now
