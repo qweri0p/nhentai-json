@@ -129,3 +129,11 @@ the check.py script returns a list of id's
 all of them appear to have been deleted  
 i'll turn it into a proper script later (argparse, path instead of os)
 
+## Commit 2dbeac4
+
+uploaded 2 raw parsers.  
+both will scan the 'raw' directory and link stuff into one file  
+the exported file from parser2.py is still massive  
+next up, database for easier querying  
+mysql or sqlite??!?!?  
+i'm gonna start with sqlite cuz it's easier to export
